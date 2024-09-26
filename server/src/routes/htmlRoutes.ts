@@ -6,5 +6,14 @@ const __dirname = path.dirname(__filename);
 const router = Router();
 
 // TODO: Define route to serve index.html
+router.get('/', (_req, res) => {
+    const indexPath = path.join(__dirname, '../../../client/dist/index.html');
+    res.sendFile(indexPath, (err) => {
+        if (err) {
+            console.error('Error sending index.html:', err);
+            res.status(500).send('Internal Server Error');
+        }
+    });
+});
 
 export default router;
