@@ -16,7 +16,6 @@ The Weather Dashboard is a web application built using TypeScript and integrates
 - [Usage](#usage)
 - [Featured](#featured)
 - [Contributing](#contributing)
-- [Video](#video)
 - [License](#license)
 - [Tests](#tests)
 - [Questions](#questions)
@@ -45,9 +44,6 @@ async getCities() {
 
 ## Contributing
 There are no contributors for this project currently
-
-## Video
-[Watch the video](https://drive.google.com/file/d/1TpUxEiMGQCNCyQj9JyXM1UfpbcUt93d9/view)
 
 ## License
 This project is licensed under the MIT license.
