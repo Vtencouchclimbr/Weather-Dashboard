@@ -55,6 +55,7 @@ class WeatherService {
     try {
       const response = await fetch(query);
       const locationData = await response.json();
+      console.log('Location Data: ', locationData);
       return locationData;
     } catch (err) {
       console.log('Error: ', err);
@@ -128,9 +129,9 @@ class WeatherService {
     return forecastArray;
   }
   // TODO: Complete getWeatherForCity method
-  async getWeatherForCity(city: string) {
+  async getWeatherForCity(cityName: string) {
     try {
-      this.city = city;
+      this.city = cityName;
 
       const coordinates = await this.fetchAndDestructureLocationData() as Coordinates;
 
